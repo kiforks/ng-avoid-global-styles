@@ -1,9 +1,9 @@
-# kiforks/selector-nest-combinators
+# kiforks/ng-avoid-global-styles
 
 Avoid `::ng-deep` at the first nesting level
 
 ```json
 {
-	"kiforks/selector-nest-combinators": "always | never"
+	"kiforks/ng-avoid-global-styles": "always | never"
 }
 ```
