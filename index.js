@@ -35,7 +35,7 @@ module.exports = stylelint.createPlugin(ruleName, expectation => {
 
 		root.walkRules(rule => {
 			const isFristNestedLevel = rule.parent.type === 'root';
-			const isNgDeep = rule.selector.includes('::ng-deep');
+			const isNgDeep = rule.selector.includes('::ng-deep') && !rule.selector.includes(':host');
 
 			if (expectation === 'always' && isFristNestedLevel && isNgDeep) {
 				utils.report({
