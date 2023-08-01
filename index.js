@@ -5,7 +5,7 @@ const parseSelector = require('./utils/parseSelector');
 const ruleUrl = require('./utils/ruleUrl');
 const ruleMessages = require('./utils/ruleMessages');
 
-const ruleName = 'kiforks/ng-avoid-global-styles';
+const ruleName = 'tc/ng-avoid-global-styles';
 const stylelint = require('stylelint');
 
 const messages = ruleMessages(ruleName, {
